@@ -1,0 +1,162 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styling */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* FAQs table styling */
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.faq-table td {
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* Styling for questions */
+.faq-table td a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.faq-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for answers */
+.faq-table td.answer {
+    display: none; /* Initially hidden */
+    font-size: 1em;
+    padding-left: 30px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #007bff;
+    color: #333;
+}
+
+/* Inquiry section styling */
+.inquiry-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.inquiry-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-section label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.inquiry-section select,
+.inquiry-section textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inquiry-section textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     width:150px;
+    margin-left:470px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Link button for viewing inquiries */
+a {
+    display: inline-block;
+    margin-top: 0px;
+    text-decoration: none;
+    
+}
+
+input[type="button"] {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     width:150px;
+    margin-left:655px;
+    margin-bottom:40px;
+}
+
+input[type="button"]:hover {
+    
+    transform: translateY(-2px);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.8em;
+    }
+}

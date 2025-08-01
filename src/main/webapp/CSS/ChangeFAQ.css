@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f4f6;
+    display: flex;
+   /* justify-content: center;*/
+    /*align-items: center;*/
+    height: 100vh;
+    padding: 0px;
+}
+
+.edit-faq-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+    border-top: 5px solid #6c63ff;
+    align-items: right;
+    justify-content: center;
+    margin:20px 70px ;
+    
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.faq-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f3f5;
+    font-size: 14px;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.3);
+    outline: none;
+}
+
+textarea.form-control {
+    height: 100px;
+    resize: none;
+}
+
+.btn-save {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width:150px;
+    margin-left:533px;
+}
+
+.btn-back {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width:150px;
+    
+}
+
+.btn-save:hover,.btn-back:hover {
+    background-color: #5851db;
+    transform: translateY(-2px);
+}
+
+.btn-save:active,.btn-back:active {
+    background-color: #6c63ff;
+    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+    .edit-faq-container {
+        width: 100%;
+        padding: 25px;
+    }
+}

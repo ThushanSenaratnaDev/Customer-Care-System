@@ -1,0 +1,283 @@
+body {
+	background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 50%;
+}
+
+.feedback-list {
+    flex: 0 0 30%; /* Add a fixed width (e.g., 35% of the container width) */
+    padding: 20px;
+    /*border: 1px solid #ccc;*/
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
+    background-color: white;
+    overflow-y: auto;
+    max-height: 500px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-right:  150px;
+    border-top: 5px solid #6c63ff;
+}
+
+.feedback-form h2 {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.feedback-form h4 {
+    width: 100%;
+    font-size: 20px;
+}
+
+.feedback-form-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star-section {
+    margin: 0 60px;
+}
+
+.feedback-form-bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    font-size: 18px;
+}
+
+.fbText {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.card {
+    background-color: white;
+    /*border: 1px solid #ccc;*/
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.stars-container {
+    margin: 0;
+}
+
+.p-stars-count {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.p-feedback {
+    margin-top: 10px; 
+    margin-bottom: 0;
+}
+
+.stars {
+    display: inline-block;
+    font-size: 80px;
+    cursor: pointer;
+    width: 75px;
+}
+
+.stars::before {
+    content: '\2605';
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    color: #ccc;
+}
+
+.stars:hover:before {
+    color:blue;
+}
+
+.selected::before {
+    color: gold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.button-fb {
+    background-color: #6c63ff;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 40%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    min-width: 100px;
+}
+
+.button-fb:hover {
+    /* background-color: darkblue; */
+    color: white;
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+.gold-star {
+    color: gold;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+
+/*allfeedback.jsp page*/
+container-afb {
+    background-color: #f0f8ff; /* Light blue background for logged user's feedback */
+}
+
+.user-feedback-afb {
+    width: 100%; /* Shrink down the user's feedback to 50% width */
+    margin: 0 auto; /* Center it horizontally */
+    margin-bottom: 0;
+}
+
+.feedback-list-afb {
+    flex: 0 0 50%; /* Adjust width to match the user feedback size */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
+    background-color: white;
+    overflow-y: auto;
+    max-height: 450px;
+    width: 50%;
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    border-top: 5px solid #6c63ff;
+}
+
+/* New class for the outer card containing the current user's feedback */
+.outer-current-user-fb {
+    max-width: 50%; /* Ensure it matches the feedback list card width */
+    margin: 0 auto; /* Center the outer card */
+    padding: 15px 20px; /* Match padding with feedback list */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.3); /* Shadow effect */
+    background-color: white; /* White background */
+    margin-bottom: 15px; /* Space below the card */
+    border-top: 5px solid #6c63ff;
+}
+
+.feedback-list-afb h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-user-fb {
+    padding: 10px; /* Use same padding as other user feedback cards */
+    border-radius: 5px; /* Maintain rounded corners */
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.2); /* Shadow effect to match other cards */
+    margin: 15px 0; /* Remove margin to keep it consistent with other cards */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 5px; /* Space between feedback and buttons */
+}
+
+.edit-button {
+    width: 100px; /* Set a specific width for the Edit button */
+    margin-right: 20px; /* Add margin to the right for spacing */
+    background-color: #6c63ff; /* Button color */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-button {
+    width: 100px; /* Set a specific width for the Delete button */
+    background-color: red; /* Button color */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;; /* Change color on hover */
+}
+
+.delete-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;; /* Change color on hover */
+}
+
+.all-fb-heading {
+    text-align: center; /* Center the text */
+    margin-top: 20px;
+    margin-bottom: 10px; /* Optional: Add some space below the heading */
+    font-size: 32px;
+}
+
+.all-other-fb-heading {
+    text-align: center; /* Center the text */
+    margin-top: 5px;
+    margin-bottom: 10px; /* Optional: Add some space below the heading */
+}
+
+.apply-changes-button {
+    width: 150px; /* Set a specific width for the Edit button */
+    margin-right: 20px; /* Add margin to the right for spacing */
+    background-color: #6c63ff; /* Button color */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.apply-changes-button:hover {
+    color: white;
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+#fbMsg {
+    padding: 5px;
+}
+
+.char-counter {
+    color: gray;
+}

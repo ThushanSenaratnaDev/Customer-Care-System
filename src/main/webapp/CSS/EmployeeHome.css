@@ -1,0 +1,33 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.big-button {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #004080;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.big-button:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+
+.big-button:active {
+    background-color: #002244;
+    transform: translateY(-2px);
+}
